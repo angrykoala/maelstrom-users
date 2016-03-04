@@ -20,11 +20,11 @@ module.exports = {
 		password: "**goldenheart**",
 		correct: true
 	},
-	student:{
+	student: {
 		username: "drunkstudent",
 		email: "student@mail.un.com",
 		password: "averageepassword",
-		correct: true		
+		correct: true
 	},
 	marvin: {
 		username: "marvin",
