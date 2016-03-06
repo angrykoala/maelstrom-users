@@ -6,7 +6,7 @@ _by @demiurgosoft_
 [![Dependency Status](https://gemnasium.com/demiurgosoft/maelstrom-users.svg)](https://gemnasium.com/demiurgosoft/maelstrom-users)
 [![Code Climate](https://codeclimate.com/github/demiurgosoft/maelstrom-users/badges/gpa.svg)](https://codeclimate.com/github/demiurgosoft/maelstrom-users)
 
-![Maelström Logo](https://raw.githubusercontent.com/demiurgosoft/maelstrom/master/logo/trans_logo.png)
+![Maelström Logo](https://raw.githubusercontent.com/demiurgosoft/maelstrom/master/logo/logo.jpg)
 
 Users micro-service for [Mäelstrom project](https://github.com/demiurgosoft/maelstrom-users), login and authentication with mongodb and JWT
 
