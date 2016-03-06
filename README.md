@@ -6,6 +6,7 @@ _by @demiurgosoft_
 [![Dependency Status](https://gemnasium.com/demiurgosoft/maelstrom-users.svg)](https://gemnasium.com/demiurgosoft/maelstrom-users)
 [![Code Climate](https://codeclimate.com/github/demiurgosoft/maelstrom-users/badges/gpa.svg)](https://codeclimate.com/github/demiurgosoft/maelstrom-users)
 
+![Maelström Logo](https://raw.githubusercontent.com/demiurgosoft/maelstrom/master/logo/trans_logo.png)
 
 Users micro-service for [Mäelstrom project](https://github.com/demiurgosoft/maelstrom-users), login and authentication with mongodb and JWT
 
@@ -55,3 +56,4 @@ The tokens used are [Json Web Tokens](http://jwt.io/) with the following payload
 Each user has an unique _id_ used across all the maelström servers (mongodb id), also the username is stored. All the tokens are signed with a private key in the server (for testing is `donpanic42`)
 
 > Licensed under GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+> Maelström logo by @iblancasa under CC0
