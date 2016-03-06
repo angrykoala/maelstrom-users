@@ -1,7 +1,7 @@
 //database configuration
 
 module.exports = {
-	url: "mongodb://localhost:27017/maelstrom_users", //db url
+	url: process.env.BDSERVER || "mongodb://localhost:27017/maelstrom_users", //db url
 	schema: {
 		user: "user" //name of schema to use
 	},
