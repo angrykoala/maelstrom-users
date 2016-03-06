@@ -3,6 +3,8 @@ Maelström - Users
 _by @demiurgosoft_   
 [![Build Status](https://travis-ci.org/demiurgosoft/maelstrom-users.svg?branch=master)](https://travis-ci.org/demiurgosoft/maelstrom-users)
 [![Coverage Status](https://coveralls.io/repos/github/demiurgosoft/maelstrom-users/badge.svg?branch=master)](https://coveralls.io/github/demiurgosoft/maelstrom-users?branch=master)
+[![Dependency Status](https://gemnasium.com/demiurgosoft/maelstrom-users.svg)](https://gemnasium.com/demiurgosoft/maelstrom-users)
+[![Code Climate](https://codeclimate.com/github/demiurgosoft/maelstrom-users/badges/gpa.svg)](https://codeclimate.com/github/demiurgosoft/maelstrom-users)
 
 
 Users micro-service for [Mäelstrom project](https://github.com/demiurgosoft/maelstrom-users), login and authentication with mongodb and JWT
@@ -48,8 +50,8 @@ The tokens used are [Json Web Tokens](http://jwt.io/) with the following payload
 "id": "56d96ce3a5e8cf4c28e1a4a4",
 "username": "my user",
 ...
-
+}
 ```
-Each user has an unique _id_ used across all the maelström servers (mongodb id), also the username is stored. All the tokens are signed with a private key in the server (for testing is `donpanic`)
+Each user has an unique _id_ used across all the maelström servers (mongodb id), also the username is stored. All the tokens are signed with a private key in the server (for testing is `donpanic42`)
 
 > Licensed under GNU AFFERO GENERAL PUBLIC LICENSE Version 3
