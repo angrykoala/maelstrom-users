@@ -3,7 +3,7 @@
 var bodyParser = require('body-parser');
 
 module.exports = {
-	port: process.env.PORT || 8080, //server port
+	port: process.env.PORT || 8081, //server port
 	secret: process.env.SECRET || "dontpanic42", //secret
 	tokenExpire: 3600, //token expiration time (in seconds)
 	//setups basic server (sets bodyparser)
@@ -12,6 +12,10 @@ module.exports = {
 		app.use(bodyParser.urlencoded({
 			extended: true
 		}));
-
+		app.use('/', function(req, res, next) {
+			res.setHeader('Access-Control-Allow-Origin', '*');
+			res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+			next();
+		});
 	}
 };

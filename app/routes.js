@@ -119,6 +119,14 @@ module.exports = function(app) {
 			else res.status(204).end();
 		});
 	});
+	app.get('/restricted/dash',function(req,res){
+		dbHandler.findById(req.user.id,function(err,user){
+			if (err) res.status(400).json({
+				err: err.toString()
+			});
+			else res.status(200).json(user);
+		});
+	});
 };
 
 //rule for generating users tokens
