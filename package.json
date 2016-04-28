@@ -1,15 +1,15 @@
 {
 	"name": "maelstrom-users",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"description": "Users handler with mongoose and JWT for maelstrom",
-	"main": "server.js",
+	"main": "app.js",
 	"directories": {
 		"test": "test"
 	},
 	"scripts": {
 		"test": "istanbul cover _mocha",
-		"start": "node server.js",
-		"astyle": "js-beautify --indent-with-tabs --brace-style collapse -r *.js app/*.js app/*/*.js config/*.js test/*.js test/*/*.js package.json",
+		"start": "node app.js",
+		"beautify": "js-beautify --indent-with-tabs --brace-style collapse -r *.js app/*.js app/*/*.js config/*.js test/*.js test/*/*.js package.json",
 		"coveralls": "cat ./coverage/lcov.info | coveralls"
 	},
 	"repository": {
