@@ -14,7 +14,7 @@ var testUsers = require('./config/users.js'); //users data for testing
 var auxFunc = require('./config/functions.js');
 
 describe('User Model', function() {
-	this.timeout(4000);
+	this.timeout(40000);
 	var db;
 	before(function(done) {
 		db = auxFunc.connectDB(done);

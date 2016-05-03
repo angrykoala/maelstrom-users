@@ -31,8 +31,8 @@ db.once('open', function() {
 	if (version) console.log("Version " + version);
 	console.log("Database opened");
 	//Starts server once database has opened
-	app.listen(serverConfig.port, function() {
-		console.log("Server listening on port " + serverConfig.port);
+	app.listen(serverConfig.port, serverConfig.address, function() {
+		console.log("Server listening at " + serverConfig.address + " on port " + serverConfig.port);
 	});
 
 });

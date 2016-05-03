@@ -16,7 +16,7 @@ var auxFunc = require('./config/functions.js');
 
 
 describe('User Database Handler', function() {
-	this.timeout(4000);
+	this.timeout(20000);
 	var db;
 	before(function(done) {
 		db = auxFunc.connectDB(done);

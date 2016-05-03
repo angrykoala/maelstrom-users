@@ -16,7 +16,7 @@ var auxFunc = require('./config/functions.js');
 
 
 describe('User API', function() {
-	this.timeout(4000);
+	this.timeout(20000);
 	var db;
 	var app;
 	before(function(done) {

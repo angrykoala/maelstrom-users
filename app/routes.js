@@ -20,6 +20,10 @@ var rootPath = {
 module.exports = function(app) {
 	config.setup(app); //setup server
 
+	app.get('/', function(req, res) {
+		res.send("MAELSTROM-USERS API");
+	});
+
 	//gets login form
 	app.get('/login', function(req, res) {
 		res.sendFile('login.html', rootPath);

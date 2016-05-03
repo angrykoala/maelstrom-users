@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var User = require('../../app/models/user.js');
-var Config = require('./server.js');
+var Config = require('../../config/server.js');
 
 
 var express = require('express');
@@ -23,7 +23,7 @@ module.exports = {
 		});
 	},
 	connectDB: function(done) {
-		mongoose.connect(Config.dbUrl);
+		mongoose.connect(dbConfig.url + "_test");
 		var db = mongoose.connection;
 		/*db.on('error', function(err) {
 			done(err);
@@ -36,7 +36,7 @@ module.exports = {
 	setupServer: function(done) {
 		var app = express();
 		require('../../app/routes.js')(app);
-		server = app.listen(Config.serverPort, function() {
+		server = app.listen(Config.port, function() {
 			done();
 		});
 		return app;
