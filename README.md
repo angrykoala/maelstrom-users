@@ -26,7 +26,8 @@ Users microservice is a RESTful API with http request and json responses:
 |POST|`/login`    |Logs user with given data `{"username","password"}` in the system|Returns the token `{"token"}` and code 201 or an error|
 |POST|`/signup`   |Creates a new user with given data `{"username","password","email"}`if it doesn't exist|Returns the login token or an error|
 |PUT |`/restricted/update`|Updates user data with given data `{"username","password"}`|Returns status 204 if everything is ok|
-|DELETE|`/restricted/remove`|Removes user, returns 204 if everything is ok|
+|DELETE|`/restricted/remove`|Removes user|204 if everything is ok|
+|GET|`/restricted/dash`|Gets logged User info|code 200 and user data {"_id","username","email"}` or 400 and error log|
 
 
 >All urls under `restricted/*` requires a valid token, auth header must be `Bearer [token]` to get access.
@@ -53,7 +54,7 @@ The tokens used are [Json Web Tokens](http://jwt.io/) with the following payload
 ...
 }
 ```
-Each user has an unique _id_ used across all the maelström servers (mongodb id), also the username is stored. All the tokens are signed with a private key in the server (for testing is `donpanic42`)
+Each user has an unique _id_ used across all the maelström servers (Mongodb id), also the username is stored. All the tokens are signed with a private key in the server (for testing use `dontpanic42`)
 
 > Licensed under GNU AFFERO GENERAL PUBLIC LICENSE Version 3
 > Maelström logo by @iblancasa under CC0

@@ -1,6 +1,6 @@
 {
   "name": "maelstrom-users",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Users handler with mongoose and JWT for maelstrom",
   "main": "app.js",
   "directories": {
