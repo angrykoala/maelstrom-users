@@ -23,7 +23,7 @@ Users microservice is a RESTful API with http request and json responses:
 
 |Method|URL         |Usage   |Response|
 |:----:|:----------:|:-------|:-------|
-|POST|`/login`    |Logs user with given data `{"username","password"}` in the system|Returns the token `{"token"}` and code 201 or an error|
+|POST|`/login`    |Logs user with given data `{"username","password"}` in the system|Returns the token `{"token"}` and code 200 or an error|
 |POST|`/signup`   |Creates a new user with given data `{"username","password","email"}`if it doesn't exist|Returns the login token or an error|
 |PUT |`/restricted/update`|Updates user data with given data `{"username","password"}`|Returns status 204 if everything is ok|
 |DELETE|`/restricted/remove`|Removes user|204 if everything is ok|

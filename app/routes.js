@@ -47,7 +47,7 @@ module.exports = function(app) {
 						res.status(500).json({
 							error: err.toString()
 						});
-					} else if (isValid) res.json({
+					} else if (isValid) res.status(200).json({
 						token: generateToken(usr)
 					});
 					else res.status(403).json({
