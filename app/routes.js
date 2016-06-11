@@ -4,6 +4,7 @@ Project: Maelström - Users
 Author: demiurgosoft <demiurgosoft@hotmail.com>
 Description: API REST for login and signup
 */
+"use strict";
 
 var dbHandler = require('./dbhandler');
 var config = require('../config/server');
@@ -21,7 +22,7 @@ module.exports = function(app) {
 	config.setup(app); //setup server
 
 	app.get('/', function(req, res) {
-		res.send("MAELSTROM-USERS API - version "+process.env.npm_package_version);
+		res.send("MAELSTROM-USERS API - version " + process.env.npm_package_version);
 	});
 
 	//gets login form
@@ -128,7 +129,11 @@ module.exports = function(app) {
 			if (err) res.status(400).json({
 				err: err.toString()
 			});
-			else res.status(200).json({id:user.id,username:user.username,email:user.email});
+			else res.status(200).json({
+				id: user.id,
+				username: user.username,
+				email: user.email
+			});
 		});
 	});
 };

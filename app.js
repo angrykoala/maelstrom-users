@@ -4,6 +4,7 @@ Project: Mäelstrom - Users
 Author: demiurgosoft <demiurgosoft@hotmail.com>
 Description: Users microsevice for maelstrom using mongoose and JWT
 */
+"use strict";
 
 var express = require('express');
 var app = express();

@@ -1,4 +1,5 @@
 //Users server configuration
+"use strict";
 
 var bodyParser = require('body-parser');
 

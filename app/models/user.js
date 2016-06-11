@@ -4,6 +4,7 @@ Project: Maelström - Users
 Author: demiurgosoft <demiurgosoft@hotmail.com>
 Description: Users mongoose schema
 */
+"use strict";
 
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt-nodejs');

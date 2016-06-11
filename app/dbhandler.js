@@ -4,6 +4,7 @@ Project: Maelström - Users
 Author: demiurgosoft <demiurgosoft@hotmail.com>
 Description: Mongoose database handler
 */
+"use strict";
 
 var User = require('./models/user');
 
