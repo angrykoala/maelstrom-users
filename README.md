@@ -8,7 +8,7 @@ _by @demiurgosoft_
 
 ![Maelström Logo](https://raw.githubusercontent.com/demiurgosoft/maelstrom/master/logo/logo.jpg)
 
-Users micro-service for [Mäelstrom project](https://github.com/demiurgosoft/maelstrom), login and authentication with mongodb and JWT
+Users micro-service for [Mäelstrom project](https://github.com/demiurgosoft/maelstrom), login and authentication with MongoDB and JWT
 
 ## Geting Started
 1. To install the service and necessary dependencies: `npm install --production`

@@ -18,8 +18,6 @@ var version = process.env.npm_package_version;
 
 require('./app/routes.js')(app); //loads routes
 
-//app.use(express.static(__dirname + '/public'));
-
 //connect and check errors
 mongoose.connect(dbConfig.url);
 var db = mongoose.connection;

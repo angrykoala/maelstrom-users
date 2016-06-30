@@ -20,7 +20,6 @@ describe('User Database Handler', function() {
 	var db;
 	before(function(done) {
 		db = auxFunc.connectDB(done);
-
 	});
 	beforeEach(function(done) {
 		auxFunc.clearUsers(function(err) {
