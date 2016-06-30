@@ -10,11 +10,16 @@ _by @demiurgosoft_
 
 Users micro-service for [Mäelstrom project](https://github.com/demiurgosoft/maelstrom), login and authentication with MongoDB and JWT
 
+
+
 ## Geting Started
+MongoDB required
+
 1. To install the service and necessary dependencies: `npm install --production`
 	1. If you want also the dev-dependencies (for testing and development of Mäelstrom-users): `npm install`
 	2. To test the service using mocha: `npm test`
 2. To start the service: `npm start`
+3. Configure the system with the files under `config/` folder
 
 To test the system, it will provide a simple login and signup clients (`/login` and `/signup`)
 
